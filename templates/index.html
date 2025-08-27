@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avera Enterprises Inc. - AI Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .text-gradient {
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            background-image: linear-gradient(to right, #00FFFF, #6366F1);
+        }
+    </style>
+</head>
+<body class="bg-gray-950 text-gray-300">
+
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 bg-gray-950 bg-opacity-90 backdrop-blur-sm shadow-md">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold text-white transition-colors duration-300 hover:text-cyan-400">
+                Avera Enterprises Inc.
+            </a>
+            <div class="space-x-8 hidden md:flex">
+                <a href="#home" class="text-white hover:text-cyan-400 transition-colors duration-300 font-semibold">Home</a>
+                <a href="#technology" class="text-white hover:text-cyan-400 transition-colors duration-300 font-semibold">Our Technology</a>
+                <a href="#about" class="text-white hover:text-cyan-400 transition-colors duration-300 font-semibold">About Us</a>
+                <a href="#contact" class="text-white hover:text-cyan-400 transition-colors duration-300 font-semibold">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="md:hidden hidden bg-gray-950 px-6 py-4 text-center">
+            <a href="#home" class="block py-2 text-white hover:text-cyan-400 transition-colors duration-300 font-semibold border-b border-gray-800">Home</a>
+            <a href="#technology" class="block py-2 text-white hover:text-cyan-400 transition-colors duration-300 font-semibold border-b border-gray-800">Our Technology</a>
+            <a href="#about" class="block py-2 text-white hover:text-cyan-400 transition-colors duration-300 font-semibold border-b border-gray-800">About Us</a>
+            <a href="#contact" class="block py-2 text-white hover:text-cyan-400 transition-colors duration-300 font-semibold">Contact</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="min-h-screen">
+        <!-- Home Section -->
+        <section id="home" class="py-20 lg:py-32 px-6 flex items-center justify-center text-center bg-gray-900 min-h-screen relative overflow-hidden">
+            <!-- Background pattern -->
+            <div class="absolute inset-0 z-0 opacity-20">
+                <svg class="h-full w-full" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
+                            <path d="M 10 0 L 0 0 0 10" fill="none" stroke="#252525" stroke-width="0.5" />
+                        </pattern>
+                    </defs>
+                    <rect width="100%" height="100%" fill="url(#grid)" />
+                </svg>
+            </div>
+            <div class="relative z-10 container mx-auto">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-4 text-white">
+                    <span class="text-gradient">The Proven AI Architecture</span> for Mission-Critical Environments.
+                </h1>
+                <p class="text-lg sm:text-xl lg:text-2xl max-w-4xl mx-auto mb-8 text-gray-400">
+                    Delivering cutting-edge AI solutions for complex challenges in defense, energy, and healthcare with a validated, deployable architecture.
+                </p>
+                <a href="#technology" class="inline-block px-8 py-4 bg-cyan-500 text-white font-bold rounded-lg shadow-lg hover:bg-cyan-600 transition-transform transform hover:scale-105 duration-300">
+                    Explore Our Solutions
+                </a>
+            </div>
+        </section>
+
+        <!-- The Challenge & Solution Section -->
+        <section class="py-20 lg:py-32 px-6">
+            <div class="container mx-auto max-w-7xl">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold mb-4 text-white">From Data Overload to Decisive Action.</h2>
+                    <p class="text-lg max-w-3xl mx-auto text-gray-400">
+                        The volume of data in mission-critical domains—from defense intelligence to healthcare diagnostics—overwhelms legacy systems. Without a modern, adaptable architecture, organizations risk missing key insights and delaying critical decisions.
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="rounded-lg overflow-hidden border-2 border-gray-700 shadow-xl">
+                        <!-- Visual of AVERA Architecture -->
+                        <picture>
+                            <source type="image/png" srcset="../static/images/avera-platform-diagram.png">
+                            <img src="../static/images/avera-platform-diagram.png" alt="Diagram of the AVERA platform microservices architecture" class="w-full h-auto" loading="lazy" decoding="async">
+                        </picture>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-semibold mb-6 text-white">The <span class="text-cyan-400">AVERA</span> Advantage.</h3>
+                        <p class="text-lg mb-6 text-gray-400">
+                            Our core innovation is a specialized, adaptable machine learning technology designed to deploy high-performance AI models across diverse and resource-constrained environments. We tackle this challenge by developing specialized AI models built upon foundational open models, including IBM's Granite and Meta's Llama.
+                        </p>
+                        <p class="text-lg text-gray-400">
+                            The key differentiator is our proprietary <strong>Advanced Virtualized Enterprise Reconfigurable Architecture (AVERA+)</strong>, a Containerized Microservices Architecture (CMSA) that allows for seamless, secure, and performant deployment of our AI models from tactical edge devices to cloud environments.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Proven Performance Section -->
+        <section class="py-20 lg:py-32 px-6 bg-gray-900">
+            <div class="container mx-auto max-w-7xl text-center">
+                <h2 class="text-4xl font-bold mb-12 text-white">Validated by "<span class="text-cyan-400">First in DoD</span>" Achievements.</h2>
+                <p class="text-lg max-w-3xl mx-auto mb-16 text-gray-400">
+                    The AVERA open architecture's capabilities have been validated through "First in DoD" achievements at the U-2 Federal Laboratory. This success underscores our ability to provide a solution that is both technologically advanced and practically proven.
+                </p>
+                <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-12">
+                    <div class="bg-gray-800 p-8 rounded-lg shadow-xl border border-gray-700 hover:border-cyan-400 transition-colors duration-300 transform hover:-translate-y-2">
+                        <h3 class="text-xl font-bold text-white mb-4">In-flight Kubernetes Utilization</h3>
+                        <p class="text-gray-400">Proving the ability to manage containerized services in a dynamic airborne environment, a true first in the defense sector.</p>
+                    </div>
+                    <div class="bg-gray-800 p-8 rounded-lg shadow-xl border border-gray-700 hover:border-cyan-400 transition-colors duration-300 transform hover:-translate-y-2">
+                        <h3 class="text-xl font-bold text-white mb-4">In-flight Software Updates</h3>
+                        <p class="text-gray-400">Enabling real-time updates for Automatic Target Recognition (ATR) algorithms to ensure the latest capabilities are always available.</p>
+                    </div>
+                    <div class="bg-gray-800 p-8 rounded-lg shadow-xl border border-gray-700 hover:border-cyan-400 transition-colors duration-300 transform hover:-translate-y-2">
+                        <h3 class="text-xl font-bold text-white mb-4">In-flight Pilot-AI Teaming</h3>
+                        <p class="text-gray-400">Demonstrating a seamless, collaborative partnership between human operators and AI on the edge for enhanced mission success.</p>
+                    </div>
+                </div>
+                <div class="mt-16">
+                    <a href="#about" class="inline-block px-8 py-4 bg-cyan-500 text-white font-bold rounded-lg shadow-lg hover:bg-cyan-600 transition-transform transform hover:scale-105 duration-300">
+                        Learn More About Our Team
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Technology Section -->
+        <section id="technology" class="py-20 lg:py-32 px-6">
+            <div class="container mx-auto max-w-7xl">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold mb-4 text-white">The AVERA Architecture: Advanced, Adaptable, and Secure.</h2>
+                    <p class="text-lg max-w-3xl mx-auto text-gray-400">
+                        At Avera Enterprises, our core innovation is the Advanced Virtualized Enterprise Reconfigurable Architecture (AVERA). This is a specialized machine learning technology designed to deploy high-performance AI models across diverse and resource-constrained environments.
+                    </p>
+                </div>
+                <div class="rounded-lg overflow-hidden border-2 border-gray-700 shadow-xl mb-12">
+                    <!-- Visual of AVERA Architecture - This will be the full-sized diagram -->
+                    <picture>
+                        <source type="image/png" srcset="../static/images/avera-platform-diagram.png">
+                        <img src="../static/images/avera-platform-diagram.png" alt="Detailed diagram of the AVERA microservices architecture" class="w-full h-auto" loading="lazy" decoding="async">
+                    </picture>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12 items-start">
+                    <div>
+                        <h3 class="text-3xl font-semibold mb-6 text-white">How It Works: A Proven Workflow.</h3>
+                        <div class="space-y-6">
+                            <div class="bg-gray-900 p-6 rounded-lg border border-gray-800">
+                                <h4 class="text-xl font-bold text-cyan-400 mb-2">The Orchestrator (Manager)</h4>
+                                <p class="text-gray-400">Continuously monitors for new data files to initiate the processing workflow, acting as the central command.</p>
+                            </div>
+                            <div class="bg-gray-900 p-6 rounded-lg border border-gray-800">
+                                <h4 class="text-xl font-bold text-cyan-400 mb-2">The Ingestion Engine (Data Reader)</h4>
+                                <p class="text-gray-400">Parses specialized files like NITF, extracting and saving necessary data for analysis.</p>
+                            </div>
+                            <div class="bg-gray-900 p-6 rounded-lg border border-gray-800">
+                                <h4 class="text-xl font-bold text-cyan-400 mb-2">The Analysis Core (ATR)</h4>
+                                <p class="text-gray-400">Runs pre-trained models to detect and classify targets, generating annotated images with bounding boxes and confidence scores.</p>
+                            </div>
+                            <div class="bg-gray-900 p-6 rounded-lg border border-gray-800">
+                                <h4 class="text-xl font-bold text-cyan-400 mb-2">The Integration Layer (UCI Adapter & OMS CAL)</h4>
+                                <p class="text-gray-400">Ensures rapid, cost-effective integration into existing government systems by generating and queuing standard messages.</p>
+                            </div>
+                            <div class="bg-gray-900 p-6 rounded-lg border border-gray-800">
+                                <h4 class="text-xl font-bold text-cyan-400 mb-2">The AI-Powered Copilot (ARTUU)</h4>
+                                <p class="text-gray-400">Acts as a copilot with a conversational and command-based interface for human operators.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-semibold mb-6 text-white">Comprehensive Adaptation Techniques.</h3>
+                        <p class="text-lg mb-6 text-gray-400">
+                            Our approach is distinguished by our comprehensive methods for adapting AI models built upon foundational open models, including IBM's Granite and Meta's Llama.
+                        </p>
+                        <ul class="space-y-6">
+                            <li class="bg-gray-900 p-6 rounded-lg border border-gray-800">
+                                <h4 class="text-xl font-bold text-cyan-400 mb-2">Fine-Tuning</h4>
+                                <p class="text-gray-400">We use Low-rank adaptation (LoRA) and Quantized Low-Rank Adaptation (QLoRA) to efficiently fine-tune base models on small, domain-specific datasets for superior accuracy.</p>
+                            </li>
+                            <li class="bg-gray-900 p-6 rounded-lg border border-gray-800">
+                                <h4 class="text-xl font-bold text-cyan-400 mb-2">Prompt Engineering</h4>
+                                <p class="text-gray-400">We refine specific input queries to guide the model's output without altering its core architecture, which is critical for real-time applications.</p>
+                            </li>
+                            <li class="bg-gray-900 p-6 rounded-lg border border-gray-800">
+                                <h4 class="text-xl font-bold text-cyan-400 mb-2">Retrieval-Augmented Generation (RAG)</h4>
+                                <p class="text-gray-400">We integrate external knowledge bases to ground the model in accurate, mission-specific information, reducing the risk of generating inaccurate content.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-20 lg:py-32 px-6 bg-gray-900">
+            <div class="container mx-auto max-w-7xl">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold mb-4 text-white">A Partnership of Proven Leaders.</h2>
+                    <p class="text-lg max-w-3xl mx-auto text-gray-400">
+                        Avera Enterprises Inc. is founded by a team of experts with a proven track record in developing and deploying advanced technologies.
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="flex flex-col items-center text-center">
+                        <!-- Headshot Placeholder -->
+                        <div class="w-64 h-64 rounded-full overflow-hidden mb-6 border-4 border-cyan-400">
+                            <img src="{{ url_for('static', filename='images/john-avera-headshot.jpg') }}" alt="Headshot of John Avera" class="w-full h-full object-cover object-[10%_20%]" loading="lazy" decoding="async" width="256" height="256">
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2">John Avera, Co-Founder</h3>
+                        <p class="text-lg max-w-prose mx-auto text-gray-400">
+                            John Harold Avera is a results-driven Senior Technology Executive with over 20 years of experience orchestrating global engineering operations. He has a proven track record of accelerating growth through innovative enterprise solutions in both commercial and defense sectors. John designed the <strong>AVERA+ open architecture</strong> for advanced airborne systems and has extensive expertise in edge computing, cloud platform engineering, and AI-driven solutions.
+                        </p>
+                    </div>
+                    <div class="bg-gray-800 p-8 rounded-lg border border-gray-700 shadow-xl">
+                        <h3 class="text-2xl font-bold text-white mb-4">A Legacy of Leadership</h3>
+                        <p class="text-lg mb-4 text-gray-400">
+                            John's capabilities are further strengthened by a distinguished military career. As a <strong>Colonel in the U.S. Army National Guard</strong>, he has over 20 years of Army and Joint Operations experience. His progressively responsible leadership assignments include roles as Tactical Support Detachment Commander and Battalion Commander.
+                        </p>
+                        <p class="text-lg text-gray-400">
+                            He has demonstrated expertise in strategic planning, operational execution, and leading diverse teams in complex environments, including multiple combat deployments. For his meritorious service in combat operations, he is a recipient of <strong>three Bronze Stars</strong>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 lg:py-32 px-6">
+            <div class="container mx-auto max-w-3xl text-center">
+                <h2 class="text-4xl font-bold mb-4 text-white">Partner with Avera Enterprises.</h2>
+                <p class="text-lg mb-12 text-gray-400">
+                    If you are a government agency, a defense contractor, or a commercial partner in the energy or healthcare sectors, we invite you to connect with us to discuss how our proven AI architecture can meet your mission-critical needs.
+                </p>
+                <form class="space-y-6">
+                    <div>
+                        <input type="text" id="name" placeholder="Your Name" class="w-full p-4 rounded-lg bg-gray-800 text-white placeholder-gray-500 border border-gray-700 focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition duration-300">
+                    </div>
+                    <div>
+                        <input type="email" id="email" placeholder="Your Email" class="w-full p-4 rounded-lg bg-gray-800 text-white placeholder-gray-500 border border-gray-700 focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition duration-300">
+                    </div>
+                    <div>
+                        <input type="text" id="company" placeholder="Company/Organization" class="w-full p-4 rounded-lg bg-gray-800 text-white placeholder-gray-500 border border-gray-700 focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition duration-300">
+                    </div>
+                    <div>
+                        <input type="text" id="subject" placeholder="Subject" class="w-full p-4 rounded-lg bg-gray-800 text-white placeholder-gray-500 border border-gray-700 focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition duration-300">
+                    </div>
+                    <div>
+                        <textarea id="message" rows="6" placeholder="Your Message..." class="w-full p-4 rounded-lg bg-gray-800 text-white placeholder-gray-500 border border-gray-700 focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition duration-300"></textarea>
+                    </div>
+                    <button type="submit" class="w-full px-8 py-4 bg-cyan-500 text-white font-bold rounded-lg shadow-lg hover:bg-cyan-600 transition-transform transform hover:scale-105 duration-300">
+                        Send Message
+                    </button>
+                </form>
+                <div class="mt-12 text-center">
+                    <p class="text-xl font-semibold mb-4 text-white">Additional Information</p>
+                    <div class="space-y-2">
+                        <p class="text-lg text-gray-400"><span class="font-bold text-cyan-400">Email:</span> jhavera@gmail.com</p>
+                        <p class="text-lg text-gray-400"><span class="font-bold text-cyan-400">Phone:</span> +1 904-570-5859</p>
+                        <p class="text-lg text-gray-400"><span class="font-bold text-cyan-400">LinkedIn:</span> <a href="https://www.linkedin.com/in/jhavera" class="hover:underline">linkedin.com/in/jhavera</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 border-t border-gray-800 py-8">
+        <div class="container mx-auto px-6 text-center text-gray-500">
+            <p>&copy; 2025 Avera Enterprises Inc. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Close mobile menu on link click
+        document.querySelectorAll('#mobile-menu a').forEach(item => {
+            item.addEventListener('click', () => {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
