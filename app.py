@@ -74,7 +74,7 @@ def send_email(subject: str, body: str, from_email: str, reply_to: str = None):
     smtp_user = os.environ.get("SMTP_USERNAME")
     smtp_pass = os.environ.get("SMTP_PASSWORD")
     use_ssl = os.environ.get("SMTP_USE_SSL", "").strip() == "1"
-    recipient = os.environ.get("CONTACT_RECIPIENT", "averaenterprisesinc@gnmail.com")
+    recipient = os.environ.get("CONTACT_RECIPIENT", "info@averaei.com")
 
     if not smtp_server or not smtp_user or not smtp_pass:
         raise RuntimeError("SMTP configuration is incomplete.")
