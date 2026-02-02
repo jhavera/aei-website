@@ -66,7 +66,7 @@ def send_email(subject: str, body: str, from_email: str, reply_to: str = None):
       - SMTP_USERNAME
       - SMTP_PASSWORD
       - SMTP_USE_SSL (optional: "1" for SSL, otherwise STARTTLS is used)
-      - CONTACT_RECIPIENT (default: averaenterprisesinc@gnmail.com)
+      - CONTACT_RECIPIENT (default: info@averaei.com)
       - SMTP_FROM (optional: overrides From address)
     """
     smtp_server = os.environ.get("SMTP_SERVER")
